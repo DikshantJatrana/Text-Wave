@@ -1,11 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/images/chat.png" />
+    <title>Text-Wave : Make your chat streamless</title>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="navbar">
+      <div class="logo">
+        <img src="/images/chat.png" />
+        <a href="/index.ejs"><h2>TexT Wave</h2></a>
+      </div>
+      <div class="nav-link">
+        <a href="#" class="light">Home</a>
+        <a href="#" class="light">About Us</a>
+        <a href="#" class="light">Contact</a>
+        <a href="#" class="nav-btn"><span>Sign Up</span></a>
+        <a href="#" class="nav-btn"><span>Log In</span></a>
+      </div>
+    </div>
+    <div class="illust">
+      <div class="content">
+        <h1><span>Connect</span> with your circle in a fun Way</h1>
+        <p>
+          TextWave: Unleash the waves of conversation with our chat platform.
+          Dive into seamless communication, ride the currents of connection, and
+          surf the tides of expressive dialogue. Join TextWave today
+        </p>
+        <a href="/error.ejs" class="join"><span>Join Now</span></a>
+      </div>
+      <div class="svg">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#FE5B00" d="M34.3,-42.1C42,-34.5,44,-21.3,50.3,-5.9C56.7,9.6,67.2,27.3,64,40.8C60.7,54.3,43.6,63.6,28.2,63C12.7,62.5,-1.2,52,-14.1,44.7C-27.1,37.5,-39,33.4,-52.6,23.7C-66.1,13.9,-81.3,-1.5,-80.7,-15.8C-80,-30,-63.5,-43,-47.4,-49.1C-31.3,-55.3,-15.7,-54.5,-1.2,-53.1C13.3,-51.7,26.6,-49.7,34.3,-42.1Z" transform="translate(100 100)" />
+        </svg>
+        </svg>
+      </div>
+      <div class="gifs">
+        <img src="/images/chatting.gif" alt="" />
+      </div>
+    </div>
+    <div class="features">
+      <div class="features-card">
+        <div class="card-heading">
+          <h2>Highlight Features</h2>
+        </div>
+        <div class="card-holder">
+          <div class="card">
+            <img src="/images/speed.gif" alt="fast">
+            <h3>Fast and Reliable</h3>
+          </div>
+          <div class="card">
+            <img src="/images/security.gif" alt="securiity">
+            <h3>Secure Encription</h3>
+          </div>
+          <div class="card">
+            <img src="/images/share.gif" alt="share">
+            <h3>Unlimited Sharing</h3>
+          </div>
+          <div class="card">
+            <img src="/images/cloud.gif" alt="cloud">
+            <h3>Cloud Sync</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shape-blog">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#FE5B00" d="M41.9,-72C55.4,-64.8,68.2,-55.8,70,-43.5C71.8,-31.2,62.7,-15.6,61,-1C59.3,13.7,65.2,27.3,62.1,37.4C59,47.6,47.1,54.2,35.2,62.4C23.4,70.5,11.7,80.3,-1.5,82.8C-14.6,85.4,-29.3,80.7,-36.9,70.1C-44.5,59.5,-45.1,42.9,-44.8,30.2C-44.4,17.6,-43.2,8.8,-49.4,-3.5C-55.5,-15.8,-68.9,-31.7,-66.7,-40.1C-64.6,-48.4,-46.8,-49.3,-33.1,-56.5C-19.3,-63.6,-9.7,-77,2.3,-80.9C14.2,-84.8,28.4,-79.3,41.9,-72Z" transform="translate(100 100)" />
+      </svg>
+    </div>
+    <div class="why">
+      <div class="world">
+        <img src="/images/Connected world.gif" alt="world">
+        <div class="world-content">
+          <h3>Your <span>Friends</span></h3>
+          <h3><span>Come</span> to Your Phone</h3>
+          <p>Experience seamless connections with friends through our app's intuitive chat features. Stay in touch, share moments, and build stronger bonds with effortless communication. Your friends are just a chat away – join the conversation today</p>
+        </div>
+      </div>
+    </div>
+    <div class="last">
+      <div class="last-big">
+        <h2>TexT Wave  guarantees</h2>
+        <h2>Comfort and Safety</h2>
+        <h2>because we understand</h2>
+        <h2>how important is <span>Pirvacy</span></h2>
+      </div>
+      <div class="last-small">
+        <p>Introducing our innovative app – a seamless platform that not only connects you with friends but prioritizes your privacy. Enjoy secure communication, share moments, and build lasting connections with confidence. Your privacy is our commitment.</p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-svg">
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 590" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
+          .path-0{
+          animation:pathAnim-0 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          }
+          @keyframes pathAnim-0{
+          0%{
+          d: path("M 0,600 L 0,225 C 110.11483253588517,183.1531100478469 220.22966507177034,141.3062200956938 299,133 C 377.77033492822966,124.69377990430621 425.1961722488038,149.92822966507177 525,177 C 624.8038277511962,204.07177033492823 776.9856459330144,232.98086124401914 877,218 C 977.0143540669856,203.01913875598086 1024.861244019139,144.14832535885168 1110,138 C 1195.138755980861,131.85167464114832 1317.5693779904304,178.42583732057415 1440,225 L 1440,600 L 0,600 Z");
+          }
+          25%{
+          d: path("M 0,600 L 0,225 C 111.57894736842107,267.44976076555025 223.15789473684214,309.8995215311005 329,319 C 434.84210526315786,328.1004784688995 534.9473684210526,303.8516746411483 604,298 C 673.0526315789474,292.1483253588517 711.0526315789473,304.6937799043062 815,271 C 918.9473684210527,237.30622009569376 1088.842105263158,157.3732057416268 1204,142 C 1319.157894736842,126.62679425837321 1379.578947368421,175.8133971291866 1440,225 L 1440,600 L 0,600 Z");
+          }
+          50%{
+          d: path("M 0,600 L 0,225 C 73.21531100478472,248.00478468899522 146.43062200956945,271.00956937799043 244,291 C 341.56937799043055,310.99043062200957 463.4928229665071,327.9665071770335 567,336 C 670.5071770334929,344.0334928229665 755.598086124402,343.1244019138756 844,311 C 932.401913875598,278.8755980861244 1024.1148325358852,215.5358851674641 1124,196 C 1223.8851674641148,176.4641148325359 1331.9425837320573,200.73205741626793 1440,225 L 1440,600 L 0,600 Z");
+          }
+          75%{
+          d: path("M 0,600 L 0,225 C 88.73684210526315,212.0909090909091 177.4736842105263,199.1818181818182 270,184 C 362.5263157894737,168.8181818181818 458.8421052631578,151.36363636363635 555,150 C 651.1578947368422,148.63636363636365 747.1578947368423,163.36363636363637 851,195 C 954.8421052631577,226.63636363636363 1066.5263157894735,275.1818181818182 1166,283 C 1265.4736842105265,290.8181818181818 1352.7368421052633,257.9090909090909 1440,225 L 1440,600 L 0,600 Z");
+          }
+          100%{
+          d: path("M 0,600 L 0,225 C 110.11483253588517,183.1531100478469 220.22966507177034,141.3062200956938 299,133 C 377.77033492822966,124.69377990430621 425.1961722488038,149.92822966507177 525,177 C 624.8038277511962,204.07177033492823 776.9856459330144,232.98086124401914 877,218 C 977.0143540669856,203.01913875598086 1024.861244019139,144.14832535885168 1110,138 C 1195.138755980861,131.85167464114832 1317.5693779904304,178.42583732057415 1440,225 L 1440,600 L 0,600 Z");
+          }
+          }</style><defs><linearGradient id="gradient" x1="50%" y1="100%" x2="50%" y2="0%"><stop offset="5%" stop-color="#fe5b00"></stop><stop offset="95%" stop-color="#fe5b00"></stop></linearGradient></defs><path d="M 0,600 L 0,225 C 110.11483253588517,183.1531100478469 220.22966507177034,141.3062200956938 299,133 C 377.77033492822966,124.69377990430621 425.1961722488038,149.92822966507177 525,177 C 624.8038277511962,204.07177033492823 776.9856459330144,232.98086124401914 877,218 C 977.0143540669856,203.01913875598086 1024.861244019139,144.14832535885168 1110,138 C 1195.138755980861,131.85167464114832 1317.5693779904304,178.42583732057415 1440,225 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>          
+      </div>
+      <div class="collection">
+          <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="row">
+            <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+            </ul>
+            </div>
+            <div class="row">
+            TexT Wave Copyright © 2024 Inferno - All rights reserved || Designed By: Dikshant Jatrana
+            </div>
+      </div>
+      </div>
+    </div>
   </body>
 </html>

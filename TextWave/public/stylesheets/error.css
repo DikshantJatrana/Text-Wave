@@ -1,0 +1,54 @@
+@font-face {
+  font-family: myfont;
+  src: url(../images/CodeNext-Trial-Bold.ttf);
+}
+body {
+  font-family: myfont;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0rem 2rem 0rem 2rem;
+  background-color: #f9ebe5;
+  align-items: center;
+}
+
+.page_404 {
+  background: #f9ebe5;
+}
+
+.page_404 img {
+  width: 100%;
+}
+
+.four_zero_four_bg {
+  background-image: url(../images/oops!.gif);
+  background-size: cover;
+  height: 30.5rem;
+  width: 37.5rem;
+  background-position: center;
+}
+
+.four_zero_four_bg h1 {
+  font-size: 7.5rem;
+}
+
+.four_zero_four_bg h3 {
+  font-size: 7.5rem;
+}
+
+.link_404 {
+  color: #f9ebe5 !important;
+  padding: 10px 20px;
+  background-color: #fe5b00;
+  border-radius: 3rem;
+  margin: 20px 0;
+  display: inline-block;
+}
+.contant_box_404 {
+  margin-top: -40px;
+}
+
+a {
+  text-decoration: none;
+}
