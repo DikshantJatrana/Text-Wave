@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "myfont";
+  src: url("../images/CodeNext-Trial-Bold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "myfont";
+}
+
+:root {
+  --accent-color: #fe5b00;
+  --background-color: #f9ebe5;
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  height: 800px;
+  width: 600px;
+  max-height: 90%;
+}
+
+.container p {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  color: var(--accent-color);
+  justify-content: center;
+}
+
+.avatar {
+  background-color: #fff;
+  align-self: center;
+  padding: 5px;
+  width: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chat {
+  background-image: url("../images/background.jpeg");
+  background-size: contain;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}
+
+.message {
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 254, 254, 0.76);
+}
+
+.btn {
+  display: flex;
+  background-color: #eee;
+  color: var(--accent-color);
+  font-family: inherit;
+  border: 0;
+  border-radius: 50px;
+  margin: 20px;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: scale 0.2s ease;
+  justify-content: space-evenly;
+}
+.btn input {
+  outline: none;
+  border: none;
+  height: 90%;
+  width: 86%;
+  padding: 1rem;
+  padding-left: 2rem;
+  border-radius: 50px;
+  background-color: #eee;
+  color: black;
+}
+.btn-plane {
+  height: 90%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.btn-plane i {
+  font-size: 1.35rem;
+  color: #fe5b00;
+}
+.btn i {
+  margin-left: auto;
+}
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  scale: 1.01;
+}
+
+.btn:active {
+  scale: 0.99;
+}
+
+/*=============== SCROLLBAR ===============*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eee;
+  border-radius: 5px;
+}
+
+/*=============== MEDIA QUERY ===============*/
+
+@media screen and (max-width: 650px) {
+  .container {
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+  }
+}
