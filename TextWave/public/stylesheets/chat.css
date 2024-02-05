@@ -59,7 +59,6 @@ body {
   background-image: url("../images/background.jpeg");
   background-size: contain;
   height: 100%;
-  overflow: auto;
   position: relative;
 }
 
@@ -69,6 +68,8 @@ body {
   height: 100%;
   width: 100%;
   background-color: rgb(255, 254, 254, 0.76);
+  overflow: auto;
+  padding: 2rem;
 }
 
 .btn {
@@ -102,6 +103,17 @@ body {
   border-radius: 50%;
   border: none;
   cursor: pointer;
+}
+.para {
+  max-width: 60%;
+  height: auto;
+  padding: 0.65rem;
+  z-index: 9;
+  background-color: #fe5b00;
+  color: white;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 .btn-plane i {
   font-size: 1.35rem;

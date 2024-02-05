@@ -24,17 +24,19 @@
         <img src="/images/worldchat.png" alt="" class="avatar" />
         <h3>Global Chat</h3>
       </div>
-      <div id="chat" class="chat">
-        <div class="message">
+      <div class="chat">
+        <div class="message" id="chat">
           <p>Today</p>
         </div>
       </div>
       <div class="btn">
-        <input type="text" placeholder="Message" />
-        <button class="btn-plane">
+        <input type="text" placeholder="Message" id="message" />
+        <button class="btn-plane" id="sent">
           <i class="fa-solid fa-paper-plane"></i>
         </button>
       </div>
     </div>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="/javascripts/chat.js"></script>
   </body>
 </html>
