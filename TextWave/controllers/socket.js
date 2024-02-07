@@ -7,8 +7,8 @@ function initializeSocket(server) {
   const io = new Server(server);
 
   io.on("connection", (socket) => {
-    socket.on("user-message", (message) => {
-      io.emit("user-message", message);
+    socket.on("send-message", (message) => {
+      socket.broadcast.emit("recive-message", message);
     });
   });
 
