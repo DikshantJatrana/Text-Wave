@@ -2,26 +2,23 @@ const mongoose = require("mongoose");
 
 mongoose.connect("mongodb://localhost:27017/Text-wave");
 
-const userSchema = new mongoose.Schema(
-  {
-    username: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    password: {
-      type: String,
-      required: true,
-    },
+const userSchema = new mongoose.Schema({
+  username: {
+    type: String,
+    required: true,
   },
-  { timestamps: true }
-);
+  email: {
+    type: String,
+    required: true,
+    unique: true, // Ensures email is unique
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+});
 
-const user = mongoose.model("user", userSchema);
+// Create a User model from the user schema
+const User = mongoose.model("User", userSchema);
 
-module.exports = user;
+module.exports = User;

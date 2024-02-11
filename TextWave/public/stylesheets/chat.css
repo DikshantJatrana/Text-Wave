@@ -22,12 +22,78 @@ body {
   margin: 0;
 }
 
+.person {
+  height: 800px;
+  width: 300px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: white;
+  max-height: 90%;
+  border-right: 0.15rem solid #fe5b00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.person-header {
+  height: 7.5%;
+  width: 90%;
+  padding-left: 2rem;
+  border-radius: 50px;
+  background-color: #eee;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.person-header input {
+  outline: none;
+  border: none;
+  height: 90%;
+  width: 80%;
+  border-radius: 50px;
+  background-color: #eee;
+  color: black;
+}
+.person-header button {
+  width: 18%;
+  aspect-ratio: 1;
+  outline: none;
+  border: none;
+  color: #fe5b00;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.person-body {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+}
+.person-body p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 90%;
+  height: 10%;
+  background-color: #eee;
+  color: black;
+  border-radius: 20px;
+}
+.person-body p:hover {
+  scale: 1.1;
+  background-color: white;
+  color: #fe5b00;
+  border: 0.1rem solid #fe5b00;
+}
 .container {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 30px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 18px #000000;
   height: 800px;
   width: 600px;
   max-height: 90%;
@@ -60,19 +126,18 @@ body {
   background-size: contain;
   height: 100%;
   position: relative;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .message {
-  position: absolute;
   top: 0%;
   height: 100%;
   width: 100%;
   background-color: rgb(255, 254, 254, 0.76);
-  overflow: auto;
   padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  overflow-y: auto;
 }
 
 .btn {
@@ -82,7 +147,7 @@ body {
   font-family: inherit;
   border: 0;
   border-radius: 50px;
-  margin: 20px;
+  margin: 5px;
   align-items: center;
   font-size: 16px;
   cursor: pointer;

@@ -3,6 +3,7 @@ const {
   handleUserSignUp,
   handleUserLogin,
   RestrictedToLogin,
+  searchUser,
 } = require("../controllers/auth");
 var router = express.Router();
 

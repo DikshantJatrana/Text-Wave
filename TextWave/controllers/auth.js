@@ -11,11 +11,12 @@ function getuser(id) {
 }
 
 async function handleUserSignUp(req, res) {
-  const { Username, Email, Password } = req.body;
+  const { Username, Email, Password, Phone } = req.body;
   await user.create({
     username: Username,
     email: Email,
     password: Password,
+    Phone: Phone,
   });
   return res.redirect("login");
 }
@@ -41,10 +42,10 @@ async function RestrictedToLogin(req, res, next) {
   if (!user) {
     return res.redirect("/login");
   }
-
   req.user = user;
   next();
 }
+
 module.exports = {
   setuser,
   getuser,
